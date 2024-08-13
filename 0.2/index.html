@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert@2/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="text-to-type" class="text-to-type">Press "Start" to begin.</div>
+        <div class="textarea-wrap">
+
+            <textarea style="" id="input-field" placeholder="Start typing..." disabled></textarea>
+        </div>
+        <div class="controls">
+            <button id="start-button" class="btn">Start</button>
+            <button id="reset-button" class="btn">Reset</button>
+        </div>
+        <div class="stats">
+            <div id="timer" class="stat">Time: 0s</div>
+            <div id="speed" class="stat">Speed: 0 WPM</div>
+            <div id="accuracy" class="stat">Accuracy: 100%</div>
+            <div id="score" class="stat">Score: 0</div>
+        </div>
+        <div class="keyboard">
+            <div id="key-Q" class="key">Q</div>
+            <div id="key-W" class="key">W</div>
+            <div id="key-E" class="key">E</div>
+            <div id="key-R" class="key">R</div>
+            <div id="key-T" class="key">T</div>
+            <div id="key-Y" class="key">Y</div>
+            <div id="key-U" class="key">U</div>
+            <div id="key-I" class="key">I</div>
+            <div id="key-O" class="key">O</div>
+            <div id="key-P" class="key">P</div>
+            <div id="key-A" class="key">A</div>
+            <div id="key-S" class="key">S</div>
+            <div id="key-D" class="key">D</div>
+            <div id="key-F" class="key">F</div>
+            <div id="key-G" class="key">G</div>
+            <div id="key-H" class="key">H</div>
+            <div id="key-J" class="key">J</div>
+            <div id="key-K" class="key">K</div>
+            <div id="key-L" class="key">L</div>
+            <div id="key-Z" class="key">Z</div>
+            <div id="key-X" class="key">X</div>
+            <div id="key-C" class="key">C</div>
+            <div id="key-V" class="key">V</div>
+            <div id="key-B" class="key">B</div>
+            <div id="key-N" class="key">N</div>
+            <div id="key-M" class="key">M</div>
+            <div id="key-SPACE" class="key special">SPACE</div>
+            <div id="key-BACKSPACE" class="key special">BACKSPACE</div>
+            <div id="key-SHIFT" class="key special">SHIFT</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

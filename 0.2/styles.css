@@ -1,0 +1,148 @@
+body {
+    font-family: 'Press Start 2P', cursive; /* Classic pixel font */
+    background-color: #87CEEB; /* Sky blue background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    background: #f5deb3; /* Wheat color */
+    border: 5px solid #8B4513; /* Saddle brown border */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    max-width: 800px;
+    width: 100%;
+}
+
+.text-to-type {
+    font-size: 24px;
+    margin-bottom: 10px;
+    white-space: pre-wrap;
+    background: #fff;
+    padding: 10px;
+    border: 2px solid #8B4513;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 2px solid #8B4513;
+    border-radius: 5px;
+    resize: none;
+    background: #f5f5f5;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 0 5px;
+    cursor: pointer;
+    border: 2px solid #8B4513;
+    border-radius: 5px;
+    background-color: #32CD32; /* Green color for Start */
+    color: #fff; /* White text color */
+    transition: background-color 0.3s;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover {
+    background-color: #228B22; /* Dark green for hover effect */
+}
+
+.btn-reset {
+    background-color: #FFA500; /* Orange color for Reset */
+}
+
+.btn-reset:hover {
+    background-color: #FF8C00; /* Dark orange for hover effect */
+}
+
+.stats {
+    margin-bottom: 20px;
+}
+
+.stat {
+    font-size: 18px;
+    margin: 5px 0;
+    background: #fff;
+    padding: 5px;
+    border: 2px solid #8B4513;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.keyboard {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 5px;
+    margin-top: 20px;
+    background: #fff;
+    padding: 10px;
+    border: 2px solid #8B4513;
+    border-radius: 5px;
+}
+
+.keyboard .row {
+    display: flex;
+    justify-content: center;
+}
+
+.key {
+    padding: 15px;
+    background-color: #FFD700; /* Gold color */
+    border: 2px solid #8B4513; /* Saddle brown border */
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.key.special {
+    background-color: #FFA500; /* Orange color */
+    font-weight: bold;
+}
+
+.key.active {
+    background-color: #32CD32; /* Lime green */
+    color: #fff;
+}
+
+.key.animated {
+    animation: press 0.1s;
+}
+
+@keyframes press {
+    0% { transform: scale(0.9); }
+    100% { transform: scale(1); }
+}
+
+.highlight {
+    color: #32CD32; /* Lime green */
+    font-weight: bold;
+}
+
+.incorrect {
+    color: #FF4500; /* Orange red */
+    text-decoration: line-through;
+}
+
+
+.textarea-wrap {
+    padding: 10px 22px;
+    padding-right: 5%;
+}
